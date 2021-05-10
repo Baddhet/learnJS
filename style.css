@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  position: relative;
+}
+.not-sroll {
+  overflow: hidden;
+}
+.container {
+  /*height: 2000px;*/
+}
+.hello {
+  margin: 0;
+}
+.login {
+
+}
+.qwe {
+  display: none;
+  position: absolute;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.popup {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 100px;
+  height: 600px;
+  width: 400px;
+  background-color: white;
+  z-index: 20;
+  top: calc(50vh - 300px);
+  left: calc(50vw - 200px);
+}
+input {
+  width: 100%;
+}
+.visible {
+  display: block;
+}
+.enter {
+  display: block;
+  margin: 0 auto;
+  background-color: red;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: auto;
+}
+.enter.valid {
+  background-color: green;
+  cursor: pointer;
+}
+.map {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 90vh;
+  border: 2px solid black;
+  background-color: #ebf7ff;
+  overflow: hidden;
+}
+.map__image {
+  position: absolute;
+  left: 100px;
+}
+.map__zoom {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  right: 20px;
+}
+.map__zoom:first-child {
+  bottom: 100px;
+}
+.map__zoom:last-child {
+  bottom: 20px;
+}
